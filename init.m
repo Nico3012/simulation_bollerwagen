@@ -37,3 +37,6 @@ A=1;      % m^2
 % Luftwiderstandsbeiwert cw
 Cw=1.1;     % ohne Einheit
 fr=0.02;   %Rollwiderstandsbeiwert
+
+% km
+stop_distance=10.6182;

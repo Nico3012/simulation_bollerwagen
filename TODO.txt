@@ -1,0 +1,2 @@
+- Rotationsträgheit einfließen lassen
+- Reichweitenberechnung simulieren
