@@ -7,4 +7,4 @@ smoothedData = smooth_data(distance_lookup, altitude_lookup, 0.01);
 
 init;
 
-open('Versuch_2_Hybridmodell_Vorlage.slx');
+open('mdl.slx');
