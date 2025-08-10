@@ -19,6 +19,13 @@ i1 = 74/9;
 % Übersetzungsverhältnis Zwischenwelle - Antriebswelle
 i2 = 58/10;
 
+%% Vergleichsmassen:
+% m_eq = J * i^2 / r^2
+m_raeder = 4 * Jrad / (rR*rR);
+m_achse_unten = Jachse_unten / (rR*rR);
+m_achse_mitte = Jachse_mitte * i2*i2 / (rR*rR);
+m_motor = Jmotor * i1*i1*i2*i2 / (rR*rR);
+
 % Nutzbare Kapazität Batterie
 Cn = 30; % [Ah]
 % Nennspannung Batterie
