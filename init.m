@@ -3,6 +3,7 @@ g = 9.81; % [km*m/s^2]
 % Gesamtmasse
 m = 455; % [kg]
 
+M_Motor = 4.2; % [Nm]
 
 % Radradius
 rR = 0.2434; % [m]
@@ -44,6 +45,7 @@ A=1;      % m^2
 % Luftwiderstandsbeiwert cw
 Cw=1.1;     % ohne Einheit
 fr=0.02;   %Rollwiderstandsbeiwert
+f_reibwert=0.5; % Reibwert bei Vollbremsung
 
 % km
 stop_distance=10.6182;
