@@ -28,7 +28,7 @@ m_achse_mitte = Jachse_mitte * i2*i2 / (rR*rR); % [kg]
 m_motor = Jmotor * i1*i1*i2*i2 / (rR*rR); % [kg]
 
 % Nutzbare Kapazität Batterie
-Cn = 0.0083; % [As] (30 Ah)
+Cn = 108000; % [As] (30 Ah)
 % Nennspannung Batterie
 Un = 48; % [V]
 
@@ -48,3 +48,8 @@ fr=0.02;   %Rollwiderstandsbeiwert
 f_reibwert=0.5; % Reibwert bei Vollbremsung
 
 stop_distance=10.6182; % [km]
+
+% Effizienzen
+Eta_Motor=0.85; % [1]
+Eta_Getriebe=0.9; % [1]
+Eta_Inverter=0.9; % [1]
