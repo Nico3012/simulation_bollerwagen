@@ -1,4 +1,4 @@
-g = 9.81; % [km*m/s^2]
+g = 9.81; % [m/s^2]
 
 % Gesamtmasse
 m = 455; % [kg]
@@ -21,14 +21,14 @@ i1 = 74/9;
 i2 = 58/10;
 
 %% Vergleichsmassen:
-% m_eq = J * i^2 / r^2
-m_raeder = 4 * Jrad / (rR*rR);
-m_achse_unten = Jachse_unten / (rR*rR);
-m_achse_mitte = Jachse_mitte * i2*i2 / (rR*rR);
-m_motor = Jmotor * i1*i1*i2*i2 / (rR*rR);
+% Formel: m_eq = J * i^2 / r^2
+m_raeder = 4 * Jrad / (rR*rR); % [kg]
+m_achse_unten = Jachse_unten / (rR*rR); % [kg]
+m_achse_mitte = Jachse_mitte * i2*i2 / (rR*rR); % [kg]
+m_motor = Jmotor * i1*i1*i2*i2 / (rR*rR); % [kg]
 
 % Nutzbare Kapazität Batterie
-Cn = 30; % [Ah]
+Cn = 0.0083; % [As] (30 Ah)
 % Nennspannung Batterie
 Un = 48; % [V]
 
@@ -39,13 +39,12 @@ Tn = 200;
 
 
 % Luftdichte
-rho=1.2;    % kg/m^3
-A=1;      % m^2
+rho=1.2;    % [kg/m^3]
+A=1;      % [m^2]
 
 % Luftwiderstandsbeiwert cw
 Cw=1.1;     % ohne Einheit
 fr=0.02;   %Rollwiderstandsbeiwert
 f_reibwert=0.5; % Reibwert bei Vollbremsung
 
-% km
-stop_distance=10.6182;
+stop_distance=10.6182; % [km]
