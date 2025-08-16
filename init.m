@@ -27,6 +27,10 @@ m_achse_unten = Jachse_unten / (rR*rR); % [kg]
 m_achse_mitte = Jachse_mitte * i2*i2 / (rR*rR); % [kg]
 m_motor = Jmotor * i1*i1*i2*i2 / (rR*rR); % [kg]
 
+%% Equivalenzmasse
+% Rotierende Masse in Gewichtsäquivalent umrechnen: https://chatgpt.com/share/68552f58-d298-800c-abd2-5a7b1e80aca3
+m_eq = m+m_raeder+m_achse_unten+m_achse_mitte+m_motor;
+
 % Nutzbare Kapazität Batterie
 Cn = 108000; % [As] (30 Ah)
 % Nennspannung Batterie
