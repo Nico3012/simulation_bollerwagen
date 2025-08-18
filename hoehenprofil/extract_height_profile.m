@@ -14,13 +14,13 @@ csv_filename = 'hoehenprofil/daten/hin_und_zurueck.txt'; % The name of your data
 if ~isfile(csv_filename)
     error('Data file not found: %s', csv_filename);
 end
-data_table = readtable(csv_filename);
+data_table = readtable(csv_filename, 'VariableNamingRule', 'preserve');
 
 
 % Extract the necessary columns
 lat = data_table.latitude;
 lon = data_table.longitude;
-alt = data_table.("altitude_m_");
+alt = data_table.("altitude (m)"); % use preserved name
 
 
 % --- Distance Calculation ---
