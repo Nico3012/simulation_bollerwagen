@@ -19,12 +19,13 @@ getLastSOC = @() sim('mdl').sigsOut.getElement('SOC [%]').Values.Data(end);
 files = dir(fullfile('.\parameterstudie','init_*.m'));
 n = numel(files);
 results = cell(n+2, 3);                 % Header + Original + n Varianten
-results(1,:) = {'init_script','lastValue','delta_percent'};
+results(1,:) = {'Parameter','SOC Result [%]','Delta [%]'};
 
 %% 1) Original init
 run('init.m');
 origVal = getLastSOC();
-results(2,:) = {'init.m', origVal, 0};
+origName = regexprep('init.m', '^init_|\.m$', '');
+results(2,:) = {origName, origVal, 0};
 
 %% 2) Parameterstudie-Init-Skripte
 for k = 1:n
@@ -35,7 +36,8 @@ for k = 1:n
     else
         pct = NaN;
     end
-    results(k+2,:) = {files(k).name, val, pct};
+    displayName = regexprep(files(k).name, '^init_|\.m$', '');
+    results(k+2,:) = {displayName, val, pct};
 end
 
 %% Nach Excel schreiben
