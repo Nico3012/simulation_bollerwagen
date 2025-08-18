@@ -1,3 +1,5 @@
+clear; clc;
+
 %% add 'hoehenprofil' folder to path
 addpath('.\hoehenprofil');
 
