@@ -47,7 +47,7 @@ rho=1.2;    % [kg/m^3]
 A=1;      % [m^2]
 
 % Luftwiderstandsbeiwert cw
-Cw=1.3;     % ohne Einheit //0.2 höherer cw-Wert
+Cw=0.99;     % ohne Einheit //10% niedriger cw-Wert
 fr=0.02;   %Rollwiderstandsbeiwert
 f_reibwert=0.5; % Reibwert bei Vollbremsung
 

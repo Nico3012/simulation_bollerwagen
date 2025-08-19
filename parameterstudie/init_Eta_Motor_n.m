@@ -3,7 +3,7 @@ g = 9.81; % [m/s^2]
 % Gesamtmasse
 m = 455; % [kg]
 
-M_Motor = 4.2; % [Nm] //10% Nm höhere Leistung
+M_Motor = 4.2; % [Nm]
 
 % Radradius
 rR = 0.2434; % [m]
@@ -54,6 +54,6 @@ f_reibwert=0.5; % Reibwert bei Vollbremsung
 stop_distance=10.6182; % [km]
 
 % Effizienzen
-Eta_Motor=0.935; % [1] // 10% höhere Effizienz
+Eta_Motor=0.765; % [1] // 10% niedrigere Effizienz
 Eta_Getriebe=0.9; % [1]
 Eta_Inverter=0.9; % [1]

@@ -44,7 +44,7 @@ Tn = 200;
 
 % Luftdichte
 rho=1.2;    % [kg/m^3]
-A=1.1;      % [m^2] //0.1 m^2 größere Fläche
+A=0.9;      % [m^2] //10% kleinere Fläche
 
 % Luftwiderstandsbeiwert cw
 Cw=1.1;     % ohne Einheit

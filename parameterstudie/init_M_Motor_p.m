@@ -3,7 +3,7 @@ g = 9.81; % [m/s^2]
 % Gesamtmasse
 m = 455; % [kg]
 
-M_Motor = 3.78; % [Nm] //10% Nm weniger Leistung
+M_Motor = 4.62; % [Nm] //10% Nm höhere Leistung
 
 % Radradius
 rR = 0.2434; % [m]

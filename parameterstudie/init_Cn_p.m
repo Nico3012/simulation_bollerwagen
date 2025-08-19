@@ -1,7 +1,7 @@
 g = 9.81; % [m/s^2]
 
 % Gesamtmasse
-m = 500.5; % [kg] //10% höhere Masse
+m = 455; % [kg]
 
 M_Motor = 4.2; % [Nm]
 
@@ -32,7 +32,7 @@ m_motor = Jmotor * i1*i1*i2*i2 / (rR*rR); % [kg]
 m_eq = m+m_raeder+m_achse_unten+m_achse_mitte+m_motor;
 
 % Nutzbare Kapazität Batterie
-Cn = 108000; % [As] (30 Ah)
+Cn = 118800; % [As] (30 Ah) //10% mehr
 % Nennspannung Batterie
 Un = 48; % [V]
 

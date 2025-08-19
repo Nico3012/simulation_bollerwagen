@@ -49,7 +49,7 @@ A=1;      % [m^2]
 % Luftwiderstandsbeiwert cw
 Cw=1.1;     % ohne Einheit
 fr=0.02;   %Rollwiderstandsbeiwert
-f_reibwert=0.45; % Reibwert bei Vollbremsung // 10% weniger Reibwert
+f_reibwert=0.55; % Reibwert bei Vollbremsung // 10% höherer Reibwert
 
 stop_distance=10.6182; % [km]
 

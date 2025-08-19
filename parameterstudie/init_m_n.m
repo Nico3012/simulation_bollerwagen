@@ -1,7 +1,7 @@
 g = 9.81; % [m/s^2]
 
 % Gesamtmasse
-m = 500.5; % [kg] //10% höhere Masse
+m = 409.5; % [kg] //10% weniger Masse
 
 M_Motor = 4.2; % [Nm]
 
