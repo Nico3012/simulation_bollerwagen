@@ -1,7 +1,7 @@
 function [distance2_lookup, altitude2_lookup] = calculate_gradient(distance_lookup, smoothedData)
 %CALCULATE_GRADIENT Calculates the gradient between consecutive points
 %   [distance2_lookup, altitude2_lookup] = calculate_gradient(distance_lookup, smoothedData)
-%   Returns mid-point distances, gradients, and the minimum segment length.
+%   Returns mid-point distances and gradients.
 
     distance2_lookup = zeros(1, length(distance_lookup)-1);
     altitude2_lookup = zeros(1, length(distance_lookup)-1);
