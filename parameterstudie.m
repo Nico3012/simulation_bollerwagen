@@ -20,7 +20,7 @@ results(1,:) = {'Parameter','SOC Result [%]','Delta [%]'};
 
 % Speicher für Signale
 SOCsignals = cell(n+1,1);   % timeseries for SOC [%]
-KMsignals  = cell(n+1,1);   % timeseries for s [km] (same length as SOC)
+KMsignals  = cell(n+1,1);   % timeseries for s [km]
 names      = cell(n+1,1);
 
 %% 1) Original init
@@ -70,19 +70,19 @@ figure('Name','SOC over time'); hold on; grid on;
 for i = 1:numel(SOCsignals)
     plot(SOCsignals{i}.Time, SOCsignals{i}.Data, 'DisplayName', names{i});
 end
-xlabel('Simulation time [s]');
-ylabel('SOC [%]');
-title('SOC profiles over time');
-legend('show','Location','best');
+xlabel('Simulation time [s]', 'Interpreter','none');
+ylabel('SOC [%]', 'Interpreter','none');
+title('SOC profiles over time', 'Interpreter','none');
+lgd1 = legend('show','Location','best');
+set(lgd1, 'Interpreter','none');
 
 %% Plot 2: SOC über Strecke (Kilometer)
-% Hinweis: Für diesen Plot verwenden wir KMsignals{i}.Data als x-Achse,
-% und SOCsignals{i}.Data als y-Achse. Beide haben dieselbe Länge je Lauf.
 figure('Name','SOC over distance'); hold on; grid on;
 for i = 1:numel(SOCsignals)
     plot(KMsignals{i}.Data, SOCsignals{i}.Data, 'DisplayName', names{i});
 end
-xlabel('Distance s [km]');
-ylabel('SOC [%]');
-title('SOC profiles over distance');
-legend('show','Location','best');
+xlabel('Distance s [km]', 'Interpreter','none');
+ylabel('SOC [%]', 'Interpreter','none');
+title('SOC profiles over distance', 'Interpreter','none');
+lgd2 = legend('show','Location','best');
+set(lgd2, 'Interpreter','none');
